@@ -1,0 +1,22 @@
+@import 'src/styles/variables.scss';
+
+$buttonColor: $blue3;
+
+button {
+    background-color: $buttonColor;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    &:hover{
+        background-color: darken($buttonColor, 3%);
+    }
+
+    &:active{
+        background-color: darken($buttonColor, 7%);
+    }
+}

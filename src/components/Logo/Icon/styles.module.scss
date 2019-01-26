@@ -1,0 +1,19 @@
+.root {
+    &:hover {
+        :global {
+            .cell {
+                //transform-origin: center;
+                position: absolute;
+                transition: all 500ms linear;
+            }
+            .first {
+                transform-origin: 32px 32px;
+                transform: rotateY(-360deg);
+            }
+            .second {
+                transform-origin: 64px 64px;
+                transform: rotateY(360deg);
+            }
+        }
+    }
+}

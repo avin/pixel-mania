@@ -1,0 +1,50 @@
+@import 'src/styles/variables.scss';
+
+$headerHeight: 50px;
+
+.root {
+    height: 100%;
+    display: flex;
+}
+
+.sidebar {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $gray3;
+
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.settings{
+    background-color: $light-gray3;
+    flex-grow: 1;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.logo {
+    height: $headerHeight;
+    background-color: $light-gray1;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-bottom: 1px solid $gray3;
+}
+
+.header {
+    height: $headerHeight;
+    background-color: $light-gray3;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-bottom: 1px solid $gray3;
+}
+
+.main{
+    background-color: $light-gray1;
+    flex: 1;
+}

@@ -1,0 +1,31 @@
+@import 'src/styles/variables.scss';
+
+$background-color: $light-gray3;
+
+$hover-lighten: 5%;
+$border-lighten: 5%;
+$active-lighten: 10%;
+
+$number-color: $blue3;
+$boolean-color: $violet3;
+$string-color: $green3;
+$button-color: $red3;
+//$save-row-color: $light-gray1;
+$save-row-color: $gray1;
+$select-color: $orange3;
+//$presets-color: $light-gray1;
+$presets-color: $gray1;
+$text-color: $dark-gray3;
+
+$border-color: $gray5;
+$input-color: lighten($background-color, 8.5%);
+$input-border: 3px solid $background-color;
+$input-padding: 2px 5px;
+
+$border-left-size: 0px;
+
+$folder-closed: #000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlGIWqMCbWAEAOw==) 6px 48% no-repeat;
+$folder-open: #000 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 48% no-repeat;
+
+$nest-margin: 4px;
+$number-height: 25px;
