@@ -1,10 +1,14 @@
-.root{
+.root {
     display: flex;
 
     align-items: center;
     padding: 0 10px;
 }
 
-.root div{
+.root div {
     margin-right: 20px;
+}
+
+.root input[type='checkbox'] {
+    margin-right: 5px;
 }

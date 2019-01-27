@@ -5,6 +5,7 @@ import Settings from '../Settings/Settings';
 import Logo from '../Logo/Logo';
 import { Header } from '../Header/Header';
 import Main from '../Main/Main';
+import GitHubLink from '../GitHubLink/GitHubLink';
 
 export default class Root extends React.Component {
     render() {
@@ -16,6 +17,7 @@ export default class Root extends React.Component {
                     <div className={styles.sidebar}>
                         <Logo className={styles.logo} />
                         <Settings className={styles.settings} />
+                        <GitHubLink />
                     </div>
                     <div className={styles.content}>
                         <Header className={styles.header} />
