@@ -1,4 +1,5 @@
 import pixelizator from './pixelizator';
+import contour from './contour';
 
 class ImageProcessor extends EventTarget {
     width = 0;
@@ -54,6 +55,18 @@ class ImageProcessor extends EventTarget {
             case 'Pixelizator': {
                 const { colors, pixelSize, accurateColors } = this.filterOptions;
                 this.processedImageData = pixelizator({ imageData: this.imageData, colors, pixelSize, accurateColors });
+                break;
+            }
+            case 'Contour': {
+                const { distance, invert, transparent, step, fillMode } = this.filterOptions;
+                this.processedImageData = contour({
+                    imageData: this.imageData,
+                    distance,
+                    invert,
+                    transparent,
+                    step,
+                    fillMode,
+                });
                 break;
             }
             case 'None': {

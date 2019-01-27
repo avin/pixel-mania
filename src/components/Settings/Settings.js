@@ -4,6 +4,7 @@ import DatGui, { DatSelect } from 'react-dat-gui';
 import chroma from 'chroma-js';
 import imageProcessor from '../../common/imageProcessor';
 import PixelizatorOptions from './PixelizatorOptions/PixelizatorOptions';
+import ContourOptions from './ContourOptions/ContourOptions';
 
 const defaultFilterOptions = {
     Pixelizator: {
@@ -16,6 +17,13 @@ const defaultFilterOptions = {
         pixelSize: 5,
         accurateColors: true,
         colors: [],
+    },
+    Contour: {
+        distance: 10,
+        invert: true,
+        transparent: false,
+        step: 2,
+        fillMode: 'square-fill',
     },
     None: {},
 };
@@ -55,6 +63,9 @@ export class Settings extends React.Component {
             case 'Pixelizator': {
                 return <PixelizatorOptions options={filterOptions} onChangeOptions={this.handleChangeFilterOptions} />;
             }
+            case 'Contour': {
+                return <ContourOptions options={filterOptions} onChangeOptions={this.handleChangeFilterOptions} />;
+            }
             default:
         }
 
@@ -67,7 +78,7 @@ export class Settings extends React.Component {
         return (
             <div className={className}>
                 <DatGui data={this.state} onUpdate={this.handleChangeFilter}>
-                    <DatSelect key="filter" path="filter" label="Filter" options={['None', 'Pixelizator']} />
+                    <DatSelect key="filter" path="filter" label="Filter" options={['None', 'Pixelizator', 'Contour']} />
                 </DatGui>
 
                 {this.renderFilterOptions()}
