@@ -14,7 +14,7 @@ module.exports = {
     rules: {
         indent: ['error', 4, { SwitchCase: 1 }],
         'max-len': ['error', 120],
-
+        'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
         'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
         'no-mixed-operators': 'off',
         'no-await-in-loop': 'off',

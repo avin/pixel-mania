@@ -1,0 +1,23 @@
+@import 'src/styles/variables.scss';
+
+$headerHeight: 40px;
+
+.root {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell{
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 3px;
+    flex: 1;
+    box-shadow: 1px 1px 0 rgba($dark-gray5, .5);
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
