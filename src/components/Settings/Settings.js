@@ -7,6 +7,8 @@ import PixelizatorOptions from './PixelizatorOptions/PixelizatorOptions';
 
 const defaultFilterOptions = {
     Pixelizator: {
+        palletMode: 'colorScale',
+        palletScheme: 'battery24',
         fromColor: '#fafa6e',
         toColor: '#2A4858',
         colorScaleMode: 'lch',
